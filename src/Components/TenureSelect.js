@@ -8,6 +8,8 @@ const TenureSelect = ({ data, setData }) => {
     const handleChange = (event) => {
       setData({...data, loanTerm: event.target.value});
     };
+
+  return(   
   <FormControl fullWidth>
     <InputLabel id="demo-simple-select-label">Tenure</InputLabel>
     <Select
@@ -25,8 +27,7 @@ const TenureSelect = ({ data, setData }) => {
       <MenuItem value={25}>25 years</MenuItem>
     </Select>
   </FormControl>
-    return 
-    
+   );
   };
   
 export default TenureSelect;

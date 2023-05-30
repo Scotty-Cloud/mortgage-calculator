@@ -9,7 +9,7 @@ const Navbar = () => {
       <Container maxWidth='xl'>
         <Toolbar>
           <Typography variant="h5">
-            Bank of React
+            Payment Calculator
           </Typography>
         </Toolbar>
       </Container>

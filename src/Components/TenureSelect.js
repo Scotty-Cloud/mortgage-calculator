@@ -11,18 +11,16 @@ const TenureSelect = ({ data, setData }) => {
 
   return(   
   <FormControl fullWidth>
-    <InputLabel id="demo-simple-select-label">Tenure</InputLabel>
+    <InputLabel id="demo-simple-select-label">Loan Plan</InputLabel>
     <Select
       labelId="demo-simple-select-label"
       id="demo-simple-select"
       value={data.loanTerm}
-      label="Tenure"
+      label="Loan Plan"
       defaultValue={5}
       onChange={handleChange}
     >
-      <MenuItem value={5}>5 years</MenuItem>
-      <MenuItem value={10}>10 years</MenuItem>
-      <MenuItem value={15}>15 years</MenuItem>
+      <MenuItem value={10}>15 years</MenuItem>
       <MenuItem value={20}>20 years</MenuItem>
       <MenuItem value={25}>25 years</MenuItem>
     </Select>

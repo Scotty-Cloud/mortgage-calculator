@@ -3,7 +3,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-const TenureSelect = ({ data, setData }) => {
+const LoanSelect = ({ data, setData }) => {
 
     const handleChange = (event) => {
       setData({...data, loanTerm: event.target.value});
@@ -20,12 +20,12 @@ const TenureSelect = ({ data, setData }) => {
       defaultValue={5}
       onChange={handleChange}
     >
-      <MenuItem value={10}>15 years</MenuItem>
+      <MenuItem value={15}>15 years</MenuItem>
       <MenuItem value={20}>20 years</MenuItem>
-      <MenuItem value={25}>25 years</MenuItem>
+      <MenuItem value={30}>30 years</MenuItem>
     </Select>
   </FormControl>
    );
   };
   
-export default TenureSelect;
+export default LoanSelect;
